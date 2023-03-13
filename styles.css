@@ -1,28 +1,32 @@
-body {
+ /* STYLING PAGE */
+ body {
+    font-family: sans-serif;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
   }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #21294d;
+  .content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 20px;
   }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  .show {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s;
   }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  #gif-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .topnav a.active {
-    background-color: #4f57a9;
-    color: white;
+  #gif {
+    max-height: 100%;
+    max-width: 100%;
   }
